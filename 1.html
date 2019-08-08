@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+
+<head>
+    <title>新闻列表单行滚动js效果和多行滚动js效果，超简洁</title>
+    <style>
+        a {
+            display: block;
+            line-height: 18px;
+            text-decoration: none;
+            color: #f00;
+            font-family: Arial;
+            font-size: 12px;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .shell {
+            width: 500px;
+        }
+
+        #div1 {
+            height: 72px;
+            overflow: hidden;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="shell">
+        <div id="div1">
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+            <a href="http://www.tonjay.com">新闻列表单行滚动js效果和多行滚动js效果</a>
+        </div>
+        <div>
+            <!-- <p>修改说明：#div1里的高度（72px）即是你需要显示的行数<br/>
+js里的18即是要滚动的行高；1500即是每次滚动所需要的时间，越大则速度越慢！
+<a href="http://www.tongjunjie.com/js">web前端资源网</a>注！<p/> -->
+</body>
+<script>
+    var c, _ = Function;
+    with(o = document.getElementById("div1")) {
+            innerHTML += innerHTML;
+            onmouseover = _("c=1");
+            onmouseout = _("c=0");
+        }
+        (F = _("if(#%18||!c)#++,#%=o.scrollHeight>>1;setTimeout(F,#%18?10:1500);".replace(/#/g, "o.scrollTop")))();
+</script>
+
+</html>
