@@ -10,7 +10,7 @@ export default class MyMap extends Component {
       <div className="map-house">
         <div className="map-house-title">
           <Icon onClick={this.props.hideMap} name="angle left" size="large" />
-          地图找房
+          地图找房哈哈哈哈
         </div>
         <div className="map-house-content">
           <Map ak="oxwIOetr6hd6SuKRNmEyjqFsqu8mqcdz" scrollWheelZoom zoom={16}>
